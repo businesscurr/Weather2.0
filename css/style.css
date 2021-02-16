@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container .bg{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .bg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .overlay {
+    position: absolute;
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.overlay {
+    display: flex;
+}
+
+.overlay .containner_left {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .containner_left .info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.overlay .containner_left .info .grade p{
+    font-size: 128px;
+    margin: 0;
+}
+
+.overlay .containner_left .info .country_day {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.overlay .containner_left .info .country_day p:first-child {
+    font-size: 48px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.overlay .containner_left .info .div {
+    content: " ";
+    border-left: 2px solid #FEFEFE;
+    height: 50px;
+}
+
+.overlay .containner_left .info .cloud {
+    margin-left: 30px;
+}
+
+.overlay .containner_left .info .cloud i {
+    font-size: 32px;
+}
+
+.overlay .containner_left .info .cloud p {
+    font-weight: lighter;
+}
+
+/* --- --- CONTAINER RIGHT --- --- */
+
+.overlay .container-right {
+    width: 30%;
+    height: 100%;
+    background: rgb(250, 250, 250, 0.2);
+}
+
+.overlay .container-right form input[type=search] {
+    color: #FEFEFE;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #FEFEFE;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 40px;
+    margin: 20px 10% 0px 10%;
+}
+
+.overlay .container-right .line {
+    border-bottom: 1px solid #FEFEFE;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.overlay .container-right .details {
+    margin: 30px 5% 30px 5%;    
+}
+
+.overlay .container-right .details h2 {
+    font-size: 20px;
+}
+
+.overlay .container-right .details .details-results .position {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
